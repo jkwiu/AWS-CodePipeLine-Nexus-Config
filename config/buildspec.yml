@@ -16,7 +16,7 @@ phases:
       - echo MVN Build is Starting....
       - mvn deploy
     finally:
-      - MVN Build Finished
+      - echo MVN Build Finished
 artifacts:
   files:
     - config/settings.xml
