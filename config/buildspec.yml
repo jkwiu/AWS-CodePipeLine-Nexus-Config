@@ -6,17 +6,15 @@ phases:
       java: corretto8
     commands:
       - echo Entered the install phase...
-      - apt-get update -y
-      - apt-get install -y maven
       - echo copy setting.xml to Local
-      - cp /config/settings.xml /root/.m2/settings.xml
+      - cp ./config/settings.xml /root/.m2/settings.xml
     finally:
       - cat /root/.m2/settings.xml
       - Copy finished
   build:
     commands:
       - echo MVN Build is Starting....
-      - mvn deploy
+      - ./mvnw deploy
     finally:
       - MVN Build Finished
 artifacts:
