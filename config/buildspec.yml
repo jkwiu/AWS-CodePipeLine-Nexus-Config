@@ -10,7 +10,7 @@ phases:
       - cp ./config/settings.xml /root/.m2/settings.xml
     finally:
       - cat /root/.m2/settings.xml
-      - Copy finished
+      - echo Copy finished
   build:
     commands:
       - echo MVN Build is Starting....
