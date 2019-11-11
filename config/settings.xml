@@ -7,12 +7,12 @@
     <server>
       <id>nexus-snapshots</id>
       <username>admin</username>
-      <password>1234</password>
+      <password>admin123</password>
     </server>
     <server>
       <id>nexus-releases</id>
       <username>admin</username>
-      <password>1234</password>
+      <password>admin123</password>
     </server>
   </servers>
 
@@ -20,7 +20,8 @@
     <mirror>
       <id>central</id>
       <name>central</name>
-      <url>http://13.209.20.106:8081/repository/maven-central/</url>
+      <!-- Input your Nexus Url -->
+      <url>http://12.203.20.106:8081/repository/maven-central/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
